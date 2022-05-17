@@ -95,6 +95,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<jvmArguments>
+						-Xms64m
+						-Xmx128m
+					</jvmArguments>
 					<fork>true</fork>
 					<mainClass>${app.class}</mainClass>
 				</configuration>
